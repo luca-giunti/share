@@ -3,6 +3,7 @@ Each folder corresponds to a different set of injected source parameters. The na
         {norm at 1 TeV [mCrab]}_{spectral index}_{cutoff energy [TeV]}.
         
 Each folder contains 1 text file (reporting the distribution of TS) and 2 subfolders: 
+
     - "PL" contains the distribution of fitted parameters for the Power Law model (i.e. `norm`, `index`, `RA`, `DEC`, `bkg_norm`, `bkg_tilt`) 
     - "ECPL" contains the distribution of fitted parameters for the Ecponential Cutoff Power Law model (i.e. `norm`, `index`, `lambda_`, `RA`, `DEC`, `bkg_norm`, `bkg_tilt`) 
 
