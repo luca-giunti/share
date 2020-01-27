@@ -1,4 +1,4 @@
-This folder contains the PeVatron metrics, i.e. the 95% C.L. lower limits of the fitted cutoffs distribution. The lower limits have been computed considering 1000 simulations and selecting both detected and undetected cutoffs. We used gammapy, and assumed 10h of observation time.
+This folder contains the PeVatron metrics, i.e. the 95% C.L. lower limits of the fitted cutoffs distribution for a point source. The lower limits have been computed considering 1000 simulations and selecting both detected and undetected cutoffs. We used gammapy, and assumed 10h of observation time.
 
 The `1D` and `3D` folders both contain:
 - a .png file showing the metrics
