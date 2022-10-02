@@ -20,10 +20,9 @@ class SherpaSpectrumDataset(SpectrumDataset):
     
     tag = "SherpaSpectrumDataset"
 
-    # TODO: implement a model wrapper to fit any kind of Gammapy model (for now only sherpa models work)
     # TODO: implement read methods
     # TODO: handle the REGION and GTI information somewhere
-    # TODO: possibly add counts, bkg and IRFs as properties
+    # TODO: add IRFs as properties
     # TODO: handle mask safe and mask fit somehow
     # TODO: implement compute residuals
     
@@ -102,7 +101,7 @@ class SherpaSpectrumDataset(SpectrumDataset):
         data = self.data
         arf = self.data.get_arf()
         rmf = self.data.get_rmf()
-        model = self.models[0]
+        model = self.models[0] 
         return RSPModelPHA(arf, rmf, data, model)
         
     @property
@@ -158,8 +157,6 @@ class SherpaSpectralModel(SpectralModel):
     ----------
     sherpa_model :
         An instance of the models defined in `~sherpa.models` or `~sherpa.astro.xspec`.
-    default_units : tuple
-        Units of the input energy array and output model evaluation (find them in the sherpa/xspec docs!)
     """
 
     tag = ["SherpaSpectralModel", "sherpa", "xspec"]
